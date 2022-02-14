@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.all
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 30px;
+    width: 80vw;
+    height: 100vh;
+    background-color: crimson;
+    align-items: flex-end;
+    overflow: auto;
+}
+.head
+{
+    display: flex;
+    justify-content: right;
+    width: 30vw;
+    height: 25vh;
+
+}
+.title
+{
+    display: flex;
+    flex-wrap: wrap;
+    color: darksalmon;
+    font-size: 320%;
+}
+.main
+{
+    /* border: 2px solid red; */
+    height: 70vh;
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-left: 2px solid crimson;
+    border-right: 2px solid crimson;
+}
+.perfil
+{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    /* border: 2px solid pink; */
+    height: 100vh;
+    background-color: pink;
+    padding-top: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.foto
+{
+    /* border-radius: 50%; */
+    margin-top: 30px;
+    height: 12rem;
+    width: 90%;
+}
+.cuerpo
+{
+    /* border: 2px solid blue; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.font
+{
+    color: cadetblue;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
+.text
+{
+    color:cornflowerblue;
+}
+.fondo
+{
+    background-color: rgb(241, 236, 231);
+    width: 100%;
+}
