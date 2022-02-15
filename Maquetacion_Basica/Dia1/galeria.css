@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Special+Elite&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.enlace{
+    text-decoration:none;
+    color: black;
+
+}
+.body
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.diver
+{
+    display: flex;
+    flex-direction: row;    
+}
+.head
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40rem;
+    width: 14rem;
+    background: linear-gradient(to right, springgreen , white);
+}
+.title
+{
+    font-family: 'Quintessential', cursive;
+    padding: 40px;
+}
+.gallery
+{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Special Elite', cursive;
+    font-size: x-large;
+    
+    
+}
+.pagina
+{
+ height: 40rem;
+ width: 100vw;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 2rem;  
+ justify-content: center; /*despues de usar wrap se ha de utilizar align-content en vez de align-items*/
+ align-content: center;
+}
+.figure
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 5px gray;
+}
+.foto
+{
+    width: auto;
+    height: 100%;
+    max-height: 280px;
+    
+}
+/* .footer
+{
+    border: 1px solid brown;
+} */
