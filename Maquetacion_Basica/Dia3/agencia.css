@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.all
+{
+    display: flex;
+    flex-direction: column;
+}
+.head
+{
+    border: 2px solid green;
+    height: 5rem;
+    width: 100%;
+}
