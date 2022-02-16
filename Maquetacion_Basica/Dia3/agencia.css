@@ -116,7 +116,7 @@
 .card
 {
     width: 220px;
-    height: 340px;
+    height: 380px;
     background-color:white;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 5px grey;
@@ -149,11 +149,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
-    color: black;
+    background-color: bisque;
     transform: rotateY(180deg);
     gap: 10px;
     size: bolder;
+    font-family: 'Akaya Telivigala', cursive;
+    color: green;
+
 }
 .formulario
 {
@@ -172,7 +174,6 @@
     justify-content: center;
     padding-top: 4rem;
     background-color:rgba(95, 158, 160, 0.082);
-    /* background: linear-gradient(to top bottom right left, rgba(95, 158, 160, 0.24) 10%, whitesmoke ); */
 }
 .case
 {
