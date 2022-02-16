@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agencia.css">
+    <title>Document</title>
+</head>
+<body class="all">
+    <header class="head">
+        <!-- <img class="cabecerísima" > -->
+        <div class="home">
+            <a class="homero" href="agencia.html"></a>
+        </div>
+        <div class="enlaces">
+            <a class="enlace" href="agenciaOfertas.html">Promociones</a>
+            <a class="enlace" href="#form">VIAJA</a>
+        </div>
+    </header>
+    <article class="cuerpasso">
+        <div class="ninja"></div>
+        <section class="formulario">
+            <div class="form" id="form">
+                <div class="case">
+                    <h4>Nombre del titular</h4>
+                    <input type="text" id="nombre" class="input"
+                    placeholder="Introduce tu nombre">
+                </div>
+                <div class="case">
+                    <h4>Lugar de salida del vuelo</h4>
+                    <input type="text" id="origen" class="input">
+                </div>
+                <div class="case">
+                    <h4>Lugar de destino del vuelo</h4>
+                    <input type="text" id="destiny" class="input">
+                </div>
+                <div class="case">
+                    <h4>Numero de personas que viajan</h4>
+                    <input type="number" id="numPersonas" class="input">
+                </div>
+                <div class="case">
+                    <h4>Fecha del viaje</h4>
+                    <input type="date" id="fecha" class="input">
+                </div>
+                <div class="buttons">
+                    <button onclick="informacion()" type="reset" id="info">Solicitar informacion</button>
+                    <button onclick="filtro()" type="reset" id="filter">Filtrar</button>
+                </div>
+            </div>
+        </section>
+    </article>
+    <script src="agencia.js"></script>    
+</body>
+</html>

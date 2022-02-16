@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.all
+{
+    display: flex;
+    flex-direction: column;
+}
+.head
+{
+    border: 2px solid orangered;
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    position: fixed;
+    justify-content: space-between;
+    height: 10rem;
+    width: 100%;
+    background-image: image("");
+}
+.home
+{
+    height: 100%;
+    width: 25%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.homero
+{
+
+}
+.enlaces
+{
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 20rem;
+    height: 100%;
+}
+.enlace
+{
+    border: 2px solid gray;
+    width: 6rem;
+    height: 3rem;
+    text-decoration: none;
+}
+.cuerpasso
+{
+    border: 5px solid purple;
+    display: flex;
+    flex-direction: column;
+    height: 90rem;
+    width: 100%;
+}
+.ninja
+{
+    height: 9.7rem;
+    border-bottom: 3px solid blue;
+    width: 100%;
+}
+.formulario
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form
+{
+    border: 2px solid salmon;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.case
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.buttons
+{
+    border: 2px solid pink;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
