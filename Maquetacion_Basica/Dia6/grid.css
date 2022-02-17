@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+.all
+{
+    display: grid;
+    gap: 1px;
+
+    grid-template-columns: [x0]300px [x1]2fr [x2]300px [x3];
+    grid-template-rows: [y0]210px [y1]210px [y2]210px [y3];
+}
+/*Marcador*/
+.war
+{
+    grid-column: x2 / x3;
+    grid-row: y1 / y2;
+
+    display: grid;
+    grid-template-columns: [up0]1fr [up1]1fr [up2];
+    grid-template-rows: [si0]1fr [si1]1fr [si2];
+    border: 3px solid red;
+}
+.dagorBragollach
+{
+    grid-column: up0 / up2;
+    grid-row: si0 / si1;
+    background-color: aqua;
+}
+.nirnaethArnoediad
+{
+    grid-column: up0 / up2;
+    grid-row: si1 / si2;
+    background-color: turquoise;
+}
+/*Contador*/
+.famine
+{
+    grid-column: x1 / x2;
+    grid-row: y0 / y1;
+    background-color: yellow;
+}
+/* Botones*/
+.plague
+{
+    grid-column: x0 / x1;
+    grid-row: y1 / y2;
+    border: 3px solid darkolivegreen;
+
+    display: grid;
+    grid-template-columns: [u0]50% [u1]50% [u2];
+    grid-template-rows: [v0]100% [v1];
+}
+.blood
+{
+    grid-column: u0 / u1;
+    grid-row: v0 / v1;
+    background-color: tomato;
+    padding-top: 90px;
+    
+    padding-left: 50px;
+    
+}
+.games
+{  
+    height: 20%;
+    width: 60%;
+}
+
+.flies
+{
+    grid-column: u1 / u2;
+    grid-row: v0 / v1;
+    background-color: blueviolet;
+    padding-top: 90px;
+    
+    padding-left: 50px;
+}
+.score
+{
+    height: 20%;
+    width: 60%;
+}
+
+/* tablero*/
+.death
+{
+    grid-column: x1 / x2;
+    grid-row: y1 / y3;
+    border: 3px solid silver;
+
+    display: grid;
+    grid-template-columns: [g0]1fr [g1]1fr [g2]1fr [g3]1fr [g4]1fr [g5];
+    grid-template-rows: [j0]1fr [j1]1fr [j2]1fr [j3]1fr [j4]1fr [j5];
+}
+.tapa
+{
+    grid-column: g0 / g5;
+    grid-row: j0 / j1;
+}
+.borde1
+{
+    grid-column: g0 / g1;
+    grid-row: j1 / j5;
+}
+.borde2
+{
+    grid-column: g5 / g5;
+    grid-row: j1 / j5;
+}
+.base
+{
+    grid-column: g0 / g5;
+    grid-row: j5 / j5;
+}
+/* TABLERO  9 Nazgûl */
+.ulaireAttea
+{
+    grid-column: g1 / g2;
+    grid-row: j1 / j2;
+    background-color: black;
+}
+.ulaireNelya
+{
+    grid-column: g2 / g3;
+    grid-row: j1 / j2;
+    background-color: beige;
+}
+.ulaireCantea
+{
+    grid-column: g3 / g4;
+    grid-row: j1 / j2;
+    background-color: black;
+}
+.ulaireNemenya
+{
+    grid-column: g1 / g2;
+    grid-row: j2 / j3;
+    background-color: beige;
+}
+.wraithKing
+{
+    grid-column: g2 / g3;
+    grid-row: j2 / j3;
+    background-color: black;
+}
+.ulaireEnquea
+{
+    grid-column: g3 / g4;
+    grid-row: j2 / j3;
+    background-color: beige;
+}
+.ulaireOtsea
+{
+    grid-column: g1 / g2;
+    grid-row: j3 / j4;
+    background-color: black;
+}
+.ulaireToldea
+{
+    grid-column: g2 / g3;
+    grid-row: j3 / j4;
+    background-color: beige;
+}
+.ulaireNertea
+{
+    grid-column: g3 / g4;
+    grid-row: j3 / j4;
+    background-color: black;
+}
+
+/*Rellenuto*/
+.figurante
+{
+    background-color: cadetblue;
+}
