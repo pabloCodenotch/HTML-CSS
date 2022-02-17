@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+:root
+{
+    --fuente: font-family: 'Akaya Telivigala', cursive;
+}
+>>>>>>> Dia3
 *{
     padding: 0px;
     margin: 0px;
@@ -10,7 +19,201 @@
 }
 .head
 {
+<<<<<<< HEAD
     border: 2px solid green;
     height: 5rem;
     width: 100%;
+=======
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    height: 10rem;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2017/03/29/11/29/nepal-2184940_960_720.jpg" );
+    background-size:cover ;
+}
+.home
+{
+    height: 100%;
+    width: 25%;
+}
+.homero
+{
+    height: 120%;
+    width: 100%;    
+    transition: transform 3s;
+}
+.homero:hover
+{
+    transform: scale(150%);
+}
+.logo
+{
+    height: 100%;
+    width: 20%;
+}
+.enlaces
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+    height: 100%;
+}
+.enlace
+{
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid beige;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Akaya Telivigala', cursive;
+    text-decoration: none;
+}
+.enlace::after
+{
+    content: "";
+    background-color:rgba(128, 255, 0, 0.514);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+.enlace:hover::after
+{
+    top: 0px;
+    left: 0px;
+}
+.cuerpasso
+{
+    /* border: 5px solid purple; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(53, 39, 116);
+    background: linear-gradient(to bottom,rgb(53, 39, 116), whitesmoke 30%);
+    gap: 12rem;
+}
+.ninja
+{
+    height: 9.7rem;
+    border-bottom: 3px solid blue;
+    width: 100%;
+}
+.table
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-content: center;
+}
+.card
+{
+    width: 220px;
+    height: 380px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px grey;
+    perspective: 1000px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.card_flip
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+}
+.card:hover .card_flip
+{
+    transform: rotateY(180deg);
+}
+.card_flipFront, .card_flipBack
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.card_flipBack
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: bisque;
+    transform: rotateY(180deg);
+    gap: 10px;
+    size: bolder;
+    font-family: 'Akaya Telivigala', cursive;
+    color: green;
+
+}
+.formulario
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form
+{
+    /* border: 2px solid salmon; */
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 4rem;
+    background-color:rgba(95, 158, 160, 0.082);
+}
+.case
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: green;
+}
+.buttons
+{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.sacarino
+{
+    border-radius: 45%;
+    background-color: aliceblue;
+    border: 3px solid black;
+    height: 3rem;
+    width: 6rem;
+}
+.vai
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+>>>>>>> Dia3
 }
