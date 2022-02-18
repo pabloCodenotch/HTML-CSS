@@ -21,17 +21,17 @@ function informacion()
 
     clientes.push(viaje)
 
-    console.log(array)
+    console.log(clientes)
 }
 
 function filtro()
 {
     for(let i = 0; i< clientes.length; i++)
     {
-        let valor = filtrado[i].destino.toUpperCase()
-        if(valor == CANARIAS || valor == MALLORCA || valor == GALICIA)
+        let valor = clientes[i].destino.toUpperCase()
+        if(valor == "CANARIAS" || valor == "MALLORCA" || valor == "GALICIA")
         {
-            filtrado.push(valor[i])
+            filtrado.push(clientes[i])
         }
         console.log(filtrado)
     }
