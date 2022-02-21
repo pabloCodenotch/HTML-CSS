@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ropa Hortera a Cholón</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">GASTA</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                   
+                    <button onclick="mostrarCarro()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        PAGA
+                     </button>
+            
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        
+    
+
+    <article class="row d-flex flex-wrap m-2">
+        <div class="card m-3" style="width: 18rem;" id="grinch">
+            <img src="https://i.etsystatic.com/7406855/r/il/7e6151/2066788366/il_794xN.2066788366_jrxl.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Ya está aqui ya llegó el jersey que da mas grima que el novio de tu prima, con el
+                    Grinch haciendo el mamarracho en tu pecho y espalda.</p>
+                <p>120€</p>
+                <button onclick="anyadir(0)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;" id="testilcetines">
+            <img src="https://i.etsystatic.com/13644935/r/il/8c7c55/2071748805/il_794xN.2071748805_3f7i.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">No los sabías hasta ahora pero ya necesitabas estos calcetines, los calcetines
+                    testiculares te permiten hacer referencias a tus gónadas y tus pies al mismo tiempo.</p>
+                <p>20€</p>
+                <button onclick="anyadir(1)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;" id="short">
+            <img src="https://i.etsystatic.com/23392403/r/il/baf634/2424004242/il_794xN.2424004242_n8y2.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Te presentamos los shorts que harán que la ropa que te regala tu abuela parezca IN,
+                    te arrepentirás de comprarlos en el momento en el que pagues 100% asegurado.</p>
+                <p>Pasamontañas de terrorista cuqui no incluido.</p>
+                <p>27€</p>
+                <button onclick="anyadir(2)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;" id="chaqueta">
+            <img src="https://i.etsystatic.com/22767706/r/il/e1eeae/3632027459/il_794xN.3632027459_qvdy.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">¿Buscas una chaqueta/jersey capaz de confundir cromáticamente a un unicornio? Pues
+                    ojo con esta aberración salida de las pesadillas más profundas de Ágata R. Prada.</p>
+                <p>199€</p>
+                <button onclick="anyadir(3)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;" id="yeti">
+            <img src="https://i.etsystatic.com/7406855/r/il/a6b8c8/1045881278/il_794xN.1045881278_51i2.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">El jersey que prueba que eres valiente y no tienes miedo a sufrir una electrocución
+                    espontánea.</p>
+                <p> Ahora produce un 3% más de ceguera.</p>
+                <p>135€</p>
+                <button onclick="anyadir(4)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;" id="conjunto">
+            <img src="https://i.etsystatic.com/5224986/r/il/31bc39/3222125254/il_794xN.3222125254_jp9j.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Sabemos que estás deseando encontrar algo aberrante, pero lo sentimos, para este
+                    conjunto no estuvimos muy inspirados y utilizamo el antiguo sofá de nuestra abuela para hacerlo,
+                    nuestras más sinceras disculpas.</p>
+                <p>200€</p>
+                <button onclick="anyadir(5)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;" id="rodilleras">
+            <img src="https://i.etsystatic.com/26621911/r/il/f4c47d/3097396460/il_794xN.3097396460_7084.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Si alguna vez has creido necesario conjuntar tu salud articular con tu outfit aquí
+                    tienes la solución. Las rodilleras fiesteras, para que hinques rodilla cuanto quieras, ya sea porque
+                    te toca declararte a la única pareja que te ha tolerado o porque has salido de fiesta y has
+                    triunfado.</p>
+                <p>Sólo disponibles en marrón con lentejuelas, allá te las veas tú para conjuntar eso.</p>
+                <p>45€</p>
+                <button onclick="anyadir(6)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;" id="jurassik">
+            <img src="https://i.etsystatic.com/6572991/r/il/2b84db/1678221560/il_794xN.1678221560_id3u.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Porque la Navidad es tiempo de magia e ilusión nosotros hemos pedido este jersey
+                    navideño con dinosaurio, porque Santa Claus debería poder regalarnos la maravilla biotecnológica de
+                    resucitar un T-Rex.</p>
+                <p>92'37€</p>
+                <button onclick="anyadir(7)" type="button" class="btn btn-outline-warning">GASTA</button>
+            </div>
+        </div>
+    </article>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Estos son tus artículos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div  class="modal-body">
+                <div id="carritoprueba"class="modal-body">
+
+                </div>
+                <div id="total" class="modal-body">
+
+                </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Pago, ya pago.</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="shop.js"></script>
+</body>
+
+</html>
